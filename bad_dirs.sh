@@ -9,7 +9,6 @@ if [[ -n $spaces ]]; then
   echo "$spaces"
 fi
 
-# complete the script starting from here`
 # list directories with unusual characters
 unusual=$(find . -maxdepth 1 -type d -regex '\./.*[^-_a-zA-Z0-9 ].*' -print | sort)
 if [[ -n $unusual ]]; then
